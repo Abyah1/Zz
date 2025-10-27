@@ -1,0 +1,8 @@
+<div class="product-card text-center">
+  <a href="{{ product.url }}">
+    <img src="{{ product.featured_image | img_url: '500x' }}" alt="{{ product.title }}" class="rounded-lg mb-4">
+    <h3 class="text-lg font-semibold mb-2">{{ product.title }}</h3>
+    <p class="text-[#00ffae] mb-3">{{ product.price | money }}</p>
+    <button class="btn">أضف للسلة</button>
+  </a>
+</div>
