@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+a {
+  color: #e5e5e5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ffae;
+}
+
+.product-card {
+  background: #141414;
+  border-radius: 14px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 255, 174, 0.15);
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ffae, #00c3ff);
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
