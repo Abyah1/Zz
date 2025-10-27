@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page_title }} | {{ shop.name }}</title>
+
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ 'script.js' | asset_url | script_tag }}
+</head>
+
+<body class="bg-[#0a0a0a] text-gray-100 font-sans">
+  {% section 'header' %}
+  
+  <main role="main" class="min-h-screen">
+    {{ content_for_layout }}
+  </main>
+  
+  {% section 'footer' %}
+</body>
+</html>
